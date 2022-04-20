@@ -1,7 +1,8 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -12,7 +13,7 @@ html {
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 1.6rem;
 }
 
@@ -31,6 +32,8 @@ body {
 .section-title {
   position: relative;
   margin: 0 auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   font-size: 3.2rem;
   font-weight: bold;
@@ -44,7 +47,8 @@ body {
   bottom: -6px;
   width: 60px;
   height: 4px;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 .section-title-light::after {
@@ -66,7 +70,6 @@ body {
 }
 
 /* --- */
-
 .nav-mobile,
 .navbar-toggler,
 .nav-desktop {
@@ -76,23 +79,22 @@ body {
 .header {
   position: relative;
   height: 95vh;
-  background-image: url('../img/header.jpg');
+  background-image: url("../img/header.jpg");
   background-position: 65% 50%;
   background-size: cover;
   z-index: 0;
 }
 
-.header p {
+.header-text {
   padding: 0 15px;
 }
 
 /* --- */
-
-.aboutme-footer p {
+.aboutme-footer-text {
   font-size: 1.2rem;
 }
 
-.aboutme-footer .btn {
+.aboutme-footer-btn {
   font-size: 1.6rem;
 }
 
@@ -105,22 +107,26 @@ body {
 }
 
 .carousel-img-one {
-  background-image: url('../img/aboutme/aboutme-carousel-1.jpg');
+  background-image: url("../img/aboutme/aboutme-carousel-1.jpg");
 }
+
 .carousel-img-two {
-  background-image: url('../img/aboutme/aboutme-carousel-2.jpg');
+  background-image: url("../img/aboutme/aboutme-carousel-2.jpg");
 }
+
 .carousel-img-three {
-  background-image: url('../img/aboutme/aboutme-carousel-3.jpg');
+  background-image: url("../img/aboutme/aboutme-carousel-3.jpg");
 }
 
 /* --- */
-
 .prices-cards .card {
   max-width: 350px;
   margin: 0 auto;
   border: 1px solid #212529;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
   transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
 }
 
 .prices-cards .card-body {
@@ -145,72 +151,64 @@ body {
 }
 
 .prices-cards .card-two,
-.prices-cards .card-two .card-button {
+.prices-cards .card-two .prices-cards .card-button {
   border-color: #fff;
 }
 
 /* --- */
-
-.contact-left {
+.contact-info {
   margin-bottom: 0.25em;
 }
 
-.contact-left,
-.contact-right {
-  border: 1px solid #000;
-}
-
-.contact-left-title {
+.contact-info-title {
   font-size: 2.6rem;
   font-weight: bold;
   text-transform: uppercase;
 }
 
-.contact input,
-.contact select,
-.contact textarea {
+.contact-info, .contact-form {
+  border: 1px solid #000;
+}
+
+.contact-btn {
+  font-size: 1.6rem;
+}
+
+.contact-form-input, .contact-form-select, .contact-form-area {
   font-size: 1.4rem;
   border: 1px solid #212529;
 }
 
-.contact .btn {
-  font-size: 1.6rem;
-}
-
 /* --- */
-
 @media (min-width: 768px) {
   .carousel-item {
     height: 460px;
   }
-
   .prices-cards .card-button {
     font-size: 1.2rem;
   }
-
-  .prices-cards .card-one,
-  .prices-cards .card-three {
-    transform: scale(85%);
+  .prices-cards .card-one, .prices-cards .card-three {
+    -webkit-transform: scale(85%);
+            transform: scale(85%);
   }
-
   .prices-cards .card-two {
-    transform: scale(90%);
+    -webkit-transform: scale(90%);
+            transform: scale(90%);
   }
-
   .prices-cards .card:hover {
-    transform: scale(100%);
+    -webkit-transform: scale(100%);
+            transform: scale(100%);
   }
-
   .contact-main {
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
-
-  .contact-left {
+  .contact-info {
     width: 29.5%;
     margin-bottom: 0;
   }
-
-  .contact-right {
+  .contact-form {
     width: 70%;
   }
 }
@@ -219,24 +217,20 @@ body {
   .section {
     scroll-margin-top: 57px;
   }
-
   .section-title {
     margin-left: 7.5px;
   }
-
   .section-title::after {
     left: 2px;
-    transform: translateX(0);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
-
   .header {
     height: 65vh;
   }
-
   .prices-cards .card-body {
     padding: 6rem;
   }
-
   .prices-cards .card-button {
     font-size: 1.8rem;
   }
@@ -244,20 +238,19 @@ body {
 
 @media (min-width: 1400px) {
   .header {
-    background-image: url('../img/header-hq.jpg');
+    background-image: url("../img/header-hq.jpg");
   }
-
   .carousel-item {
     height: 450px;
   }
-
   .carousel-img-one {
-    background-image: url('../img/aboutme/aboutme-carousel-1-hq.jpg');
+    background-image: url("../img/aboutme/aboutme-carousel-1-hq.jpg");
   }
   .carousel-img-two {
-    background-image: url('../img/aboutme/aboutme-carousel-2-hq.jpg');
+    background-image: url("../img/aboutme/aboutme-carousel-2-hq.jpg");
   }
   .carousel-img-three {
-    background-image: url('../img/aboutme/aboutme-carousel-3-hq.jpg');
+    background-image: url("../img/aboutme/aboutme-carousel-3-hq.jpg");
   }
 }
+/*# sourceMappingURL=main.css.map */

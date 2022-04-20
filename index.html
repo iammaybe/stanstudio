@@ -14,7 +14,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap"
       rel="stylesheet"
     />
     <script
@@ -57,7 +57,9 @@
       <h1 class="display-1 fw-bold">
         <span class="text-secondary">Stan</span>Studio
       </h1>
-      <p class="m-0">Zatrzymaj się i uchwyć to, co najcenniejsze.</p>
+      <p class="header-text m-0">
+        Zatrzymaj się i uchwyć to, co najcenniejsze.
+      </p>
       <div class="hero-shadow"></div>
     </header>
     <nav
@@ -121,14 +123,14 @@
                 </div>
                 <a
                   href="#contact"
-                  class="btn btn-outline-dark px-5 py-3 m-lg-0 align-self-start"
+                  class="aboutme-footer-btn btn btn-outline-dark px-5 py-3 m-lg-0 align-self-start"
                   >Kontakt</a
                 >
               </div>
             </div>
           </div>
 
-          <div class="aboutme-carousel section-padding py-5">
+          <div class="section-padding py-5">
             <div
               id="carouselExampleCaptions"
               class="carousel slide"
@@ -286,11 +288,11 @@
           <h3 class="section-title section-title-light mb-4">kontakt</h3>
           <div class="contact-main section-padding row m-0 py-5">
             <div
-              class="contact-left col-12 col-lg-3 d-flex flex-column justify-content-center align-items-center p-4 p-lg-5"
+              class="contact-info col-12 col-lg-3 d-flex flex-column justify-content-center align-items-center p-4 p-lg-5"
             >
-              <p class="contact-left-title mb-4">adres</p>
+              <p class="contact-info-title mb-4">adres</p>
 
-              <div class="contact-left-info text-start">
+              <div class="contact-info-info text-start">
                 <p class="m-0">
                   <i class="fa-solid fa-house"></i> ul. Agrestowa 15
                 </p>
@@ -303,26 +305,32 @@
                 </p>
               </div>
             </div>
-            <div class="contact-right col-12 col-lg-9 p-4 p-lg-5">
+            <div class="contact-form col-12 col-lg-9 p-4 p-lg-5">
               <form class="mt-3">
                 <div class="row">
                   <div class="col-md-6">
                     <div class="form-group mb-4">
                       <label>Imię i nazwisko:</label>
-                      <input type="text" class="form-control" />
+                      <input
+                        type="text"
+                        class="contact-form-input form-control"
+                      />
                     </div>
                   </div>
                   <div class="col-md-6">
                     <div class="form-group mb-4">
                       <label>Adres mailowy:</label>
-                      <input type="email" class="form-control" />
+                      <input
+                        type="email"
+                        class="contact-form-input form-control"
+                      />
                     </div>
                   </div>
                 </div>
                 <div class="col-12">
                   <div class="form-group mb-4">
                     <label>Temat:</label>
-                    <select class="form-select">
+                    <select class="contact-form-select form-select">
                       <option selected>- wybierz temat -</option>
                       <option>Realizacja usługi</option>
                       <option>Problem z płatnością</option>
@@ -335,7 +343,7 @@
                     <label>Twoja wiadomość:</label>
                     <textarea
                       rows="6"
-                      class="form-control"
+                      class="contact-form-area form-control"
                       placeholder="Treść wiadomości..."
                     ></textarea>
                   </div>
@@ -343,7 +351,7 @@
               </form>
               <a
                 href="#"
-                class="btn btn-outline-dark d-block d-md-inline-block px-5 py-3 mt-lg-4"
+                class="contact-btn btn btn-outline-dark d-block d-md-inline-block px-5 py-3 mt-lg-4"
                 >Wyślij</a
               >
             </div>
