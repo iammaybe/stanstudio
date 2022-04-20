@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StanStudio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/48a09c519d.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <nav
+      class="nav-mobile navbar navbar-dark bg-dark py-3 sticky-top d-lg-none"
+    >
+      <div class="container">
+        <button
+          class="navbar-toggler ms-auto"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav pt-4">
+            <a class="nav-link active ms-auto" aria-current="page" href="#"
+              >Home</a
+            >
+            <a class="nav-link ms-auto" href="#aboutme">O mnie</a>
+            <a class="nav-link ms-auto" href="#prices">Cennik</a>
+            <a class="nav-link ms-auto" href="#contact">Kontakt</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <header
+      class="header d-flex flex-column justify-content-center align-items-center text-light text-center"
+    >
+      <h1 class="display-1 fw-bold">
+        <span class="text-secondary">Stan</span>Studio
+      </h1>
+      <p class="m-0">Zatrzymaj się i uchwyć to, co najcenniejsze.</p>
+      <div class="hero-shadow"></div>
+    </header>
+    <nav
+      class="nav-desktop navbar navbar-expand-lg navbar-dark bg-dark py-3 sticky-top d-none d-lg-block"
+    >
+      <div class="container">
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav m-auto">
+            <a class="nav-link active px-4" aria-current="page" href="#"
+              >Home</a
+            >
+            <a class="nav-link px-5" href="#aboutme">O mnie</a>
+            <a class="nav-link px-5" href="#prices">Cennik</a>
+            <a class="nav-link px-5" href="#contact">Kontakt</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <section
+        id="aboutme"
+        class="aboutme section section-light text-dark py-5"
+      >
+        <div class="container py-4 py-lg-5">
+          <h3 class="section-title section-title-light mb-4">o mnie</h3>
+          <div class="aboutme-main row m-0 py-5">
+            <div
+              class="aboutme-left col-12 col-lg-4 d-flex flex-column flex-lg-row justify-content-center align-items-center pe-lg-5 mb-5 mb-lg-0"
+            >
+              <img
+                class="aboutme-img img-fluid"
+                src="img/aboutme/aboutme-main.jpg"
+                alt="Mężczyzna z aparatem
+              fotograficznym."
+              />
+            </div>
+
+            <div
+              class="aboutme-right col-12 col-lg-8 d-flex flex-column justify-content-between ps-lg-5"
+            >
+              <div class="aboutme-text mb-3 mb-lg-0">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+                  auctor libero at sem maximus, a tempus sapien sollicitudin.
+                  Aenean at neque ligula. Morbi suscipit enim felis, sit amet
+                  facilisis nunc blandit et. Vivamus sed tincidunt sapien, et
+                  cursus justo. Lorem ipsum dolor sit amet, consectetur
+                  adipisicing elit. Iusto, similique!
+                </p>
+              </div>
+
+              <div
+                class="aboutme-footer d-flex flex-column flex-md-row justify-content-between align-items-md-center"
+              >
+                <div class="aboutme-footer-text mb-4 mb-md-0">
+                  <p class="lead m-0">Współpraca biznesowa?</p>
+                  <p class="lead m-0">
+                    Skontaktuj się ze mną przez formularz kontaktowy.
+                  </p>
+                </div>
+                <a
+                  href="#contact"
+                  class="btn btn-outline-dark px-5 py-3 m-lg-0 align-self-start"
+                  >Kontakt</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="aboutme-carousel section-padding py-5">
+            <div
+              id="carouselExampleCaptions"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
+              </div>
+              <div class="carousel-inner text-light text-center">
+                <div class="carousel-item carousel-img-one active">
+                  <div
+                    class="carousel-caption h-100 p-5 d-flex flex-column justify-content-end align-items-center"
+                  >
+                    <p class="display-3">Wysokiej jakości sprzęt</p>
+                    <p class="d-none d-sm-block">
+                      Dysponuję sprzętem najwyższej jakości.
+                    </p>
+                  </div>
+                  <div class="hero-shadow"></div>
+                </div>
+                <div class="carousel-item carousel-img-two">
+                  <div
+                    class="carousel-caption h-100 p-5 d-flex flex-column justify-content-end align-items-center"
+                  >
+                    <p class="display-3">Fotografia turystyczna</p>
+                    <p class="d-none d-sm-block">
+                      Pasję do fotografii łączę z pasją do podróżowania.
+                    </p>
+                  </div>
+                  <div class="hero-shadow"></div>
+                </div>
+                <div class="carousel-item carousel-img-three">
+                  <div
+                    class="carousel-caption h-100 p-5 d-flex flex-column justify-content-end align-items-center"
+                  >
+                    <p class="display-3">Fotografia krajobrazu</p>
+                    <p class="d-none d-sm-block">
+                      Doświadczenie budowane przez lata.
+                    </p>
+                  </div>
+                  <div class="hero-shadow"></div>
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Poprzednie</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Następne</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="prices" class="prices section bg-secondary text-dark py-5">
+        <div class="container py-4 py-lg-5">
+          <h3
+            class="section-title section-title-dark mb-4 text-center text-lg-start"
+          >
+            <span class="section-title-underline">cennik</span>
+          </h3>
+          <div class="prices-cards section-padding text-center py-5">
+            <div class="row row-cols-1 row-cols-md-3 g-4 g-xl-5">
+              <div class="col">
+                <div class="card card-one h-100">
+                  <div class="card-body d-flex flex-column">
+                    <h5 class="card-title mb-5">Film</h5>
+                    <p class="card-text">Materiały wideo.</p>
+                    <hr />
+                    <p class="card-text mt-3">Filmy w rozdzielczości 4K.</p>
+                    <i class="card-icon fa-solid fa-film py-5"></i>
+                    <a href="#" class="card-button btn btn-secondary px-5 py-3"
+                      >Wybieram</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card card-two h-100 bg-dark text-light">
+                  <div class="card-body d-flex flex-column">
+                    <h5 class="card-title mb-5">Zdjęcia</h5>
+                    <p class="card-text">Sesje zdjęciowe.</p>
+                    <hr />
+                    <p class="card-text mt-3">Fotografie najwyższej jakości.</p>
+                    <i class="card-icon fa-solid fa-camera py-5"></i>
+                    <a href="#" class="card-button btn btn-primary px-5 py-3"
+                      >Wybieram</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card card-three h-100">
+                  <div
+                    class="card-body d-flex flex-column justify-content-center"
+                  >
+                    <h5 class="card-title mb-5">Montaż</h5>
+                    <p class="card-text">Profesjonalna edycja.</p>
+                    <hr />
+                    <p class="card-text mt-3">Nowatorskie podejście.</p>
+                    <i class="card-icon fa-solid fa-sd-card py-5"></i>
+                    <a href="#" class="card-button btn btn-secondary px-5 py-3"
+                      >Wybieram</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="contact"
+        class="contact section section-light text-dark py-5"
+      >
+        <div class="container py-4 py-lg-5">
+          <h3 class="section-title section-title-light mb-4">kontakt</h3>
+          <div class="contact-main section-padding row m-0 py-5">
+            <div
+              class="contact-left col-12 col-lg-3 d-flex flex-column justify-content-center align-items-center p-4 p-lg-5"
+            >
+              <p class="contact-left-title mb-4">adres</p>
+
+              <div class="contact-left-info text-start">
+                <p class="m-0">
+                  <i class="fa-solid fa-house"></i> ul. Agrestowa 15
+                </p>
+                <p><i class="fa-solid fa-city"></i> 30-210 Kraków</p>
+                <p class="m-0">
+                  <i class="fa-solid fa-phone"></i> +48 751 525 729
+                </p>
+                <p class="m-0">
+                  <i class="fa-solid fa-envelope"></i> mail@stanstudio.pl
+                </p>
+              </div>
+            </div>
+            <div class="contact-right col-12 col-lg-9 p-4 p-lg-5">
+              <form class="mt-3">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group mb-4">
+                      <label>Imię i nazwisko:</label>
+                      <input type="text" class="form-control" />
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group mb-4">
+                      <label>Adres mailowy:</label>
+                      <input type="email" class="form-control" />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-group mb-4">
+                    <label>Temat:</label>
+                    <select class="form-select">
+                      <option selected>- wybierz temat -</option>
+                      <option>Realizacja usługi</option>
+                      <option>Problem z płatnością</option>
+                      <option>Inny</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-group mb-4">
+                    <label>Twoja wiadomość:</label>
+                    <textarea
+                      rows="6"
+                      class="form-control"
+                      placeholder="Treść wiadomości..."
+                    ></textarea>
+                  </div>
+                </div>
+              </form>
+              <a
+                href="#"
+                class="btn btn-outline-dark d-block d-md-inline-block px-5 py-3 mt-lg-4"
+                >Wyślij</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer
+      class="footer section-padding bg-secondary text-dark border-top border-dark"
+    >
+      <p class="text-center mb-0 py-5">
+        Copyright &copy; 2022 StanStudio. All Rights Reserved.
+      </p>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

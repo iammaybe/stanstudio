@@ -1,0 +1,263 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.6rem;
+}
+
+.section {
+  scroll-margin-top: 57px;
+}
+
+.section-padding {
+  padding: 0 7.5px;
+}
+
+.section-light {
+  background-color: #ddd;
+}
+
+.section-title {
+  position: relative;
+  margin: 0 auto;
+  width: fit-content;
+  font-size: 3.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -6px;
+  width: 60px;
+  height: 4px;
+  transform: translateX(-50%);
+}
+
+.section-title-light::after {
+  background-color: #6c757d;
+}
+
+.section-title-dark::after {
+  background-color: #ddd;
+}
+
+.hero-shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: -1;
+}
+
+/* --- */
+
+.nav-mobile,
+.navbar-toggler,
+.nav-desktop {
+  font-size: 2rem;
+}
+
+.header {
+  position: relative;
+  height: 95vh;
+  background-image: url('../img/header.jpg');
+  background-position: 65% 50%;
+  background-size: cover;
+  z-index: 0;
+}
+
+.header p {
+  padding: 0 15px;
+}
+
+/* --- */
+
+.aboutme-footer p {
+  font-size: 1.2rem;
+}
+
+.aboutme-footer .btn {
+  font-size: 1.6rem;
+}
+
+.carousel-item {
+  position: relative;
+  height: 350px;
+  background-position: center;
+  background-size: cover;
+  z-index: 0;
+}
+
+.carousel-img-one {
+  background-image: url('../img/aboutme/aboutme-carousel-1.jpg');
+}
+.carousel-img-two {
+  background-image: url('../img/aboutme/aboutme-carousel-2.jpg');
+}
+.carousel-img-three {
+  background-image: url('../img/aboutme/aboutme-carousel-3.jpg');
+}
+
+/* --- */
+
+.prices-cards .card {
+  max-width: 350px;
+  margin: 0 auto;
+  border: 1px solid #212529;
+  transition: transform 0.3s;
+}
+
+.prices-cards .card-body {
+  padding: 4rem;
+}
+
+.prices-cards .card-title {
+  font-size: 2.6rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.prices-cards .card-icon {
+  font-size: 4rem;
+}
+
+.prices-cards .card-button {
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: 1px solid #212529;
+}
+
+.prices-cards .card-two,
+.prices-cards .card-two .card-button {
+  border-color: #fff;
+}
+
+/* --- */
+
+.contact-left {
+  margin-bottom: 0.25em;
+}
+
+.contact-left,
+.contact-right {
+  border: 1px solid #000;
+}
+
+.contact-left-title {
+  font-size: 2.6rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.contact input,
+.contact select,
+.contact textarea {
+  font-size: 1.4rem;
+  border: 1px solid #212529;
+}
+
+.contact .btn {
+  font-size: 1.6rem;
+}
+
+/* --- */
+
+@media (min-width: 768px) {
+  .carousel-item {
+    height: 460px;
+  }
+
+  .prices-cards .card-button {
+    font-size: 1.2rem;
+  }
+
+  .prices-cards .card-one,
+  .prices-cards .card-three {
+    transform: scale(85%);
+  }
+
+  .prices-cards .card-two {
+    transform: scale(90%);
+  }
+
+  .prices-cards .card:hover {
+    transform: scale(100%);
+  }
+
+  .contact-main {
+    justify-content: space-between;
+  }
+
+  .contact-left {
+    width: 29.5%;
+    margin-bottom: 0;
+  }
+
+  .contact-right {
+    width: 70%;
+  }
+}
+
+@media (min-width: 992px) {
+  .section {
+    scroll-margin-top: 57px;
+  }
+
+  .section-title {
+    margin-left: 7.5px;
+  }
+
+  .section-title::after {
+    left: 2px;
+    transform: translateX(0);
+  }
+
+  .header {
+    height: 65vh;
+  }
+
+  .prices-cards .card-body {
+    padding: 6rem;
+  }
+
+  .prices-cards .card-button {
+    font-size: 1.8rem;
+  }
+}
+
+@media (min-width: 1400px) {
+  .header {
+    background-image: url('../img/header-hq.jpg');
+  }
+
+  .carousel-item {
+    height: 450px;
+  }
+
+  .carousel-img-one {
+    background-image: url('../img/aboutme/aboutme-carousel-1-hq.jpg');
+  }
+  .carousel-img-two {
+    background-image: url('../img/aboutme/aboutme-carousel-2-hq.jpg');
+  }
+  .carousel-img-three {
+    background-image: url('../img/aboutme/aboutme-carousel-3-hq.jpg');
+  }
+}
