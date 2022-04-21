@@ -13,22 +13,24 @@ html {
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 1.6rem;
 }
 
 .section {
   scroll-margin-top: 57px;
 }
-
 .section-padding {
   padding: 0 7.5px;
 }
-
 .section-light {
-  background-color: #ddd;
+  background-color: #fff;
+  color: #0a0a0a;
 }
-
+.section-dark {
+  background-color: #0a0a0a;
+  color: #fff;
+}
 .section-title {
   position: relative;
   margin: 0 auto;
@@ -39,9 +41,8 @@ body {
   font-weight: bold;
   text-transform: uppercase;
 }
-
 .section-title::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 50%;
   bottom: -6px;
@@ -49,14 +50,7 @@ body {
   height: 4px;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-}
-
-.section-title-light::after {
-  background-color: #6c757d;
-}
-
-.section-title-dark::after {
-  background-color: #ddd;
+  background-color: #d76939;
 }
 
 .hero-shadow {
@@ -70,6 +64,10 @@ body {
 }
 
 /* --- */
+.navbar {
+  background-color: #0a0a0a;
+}
+
 .nav-mobile,
 .navbar-toggler,
 .nav-desktop {
@@ -82,9 +80,9 @@ body {
   background-image: url("../img/header.jpg");
   background-position: 65% 50%;
   background-size: cover;
+  color: #fff;
   z-index: 0;
 }
-
 .header-text {
   padding: 0 15px;
 }
@@ -93,9 +91,14 @@ body {
 .aboutme-footer-text {
   font-size: 1.2rem;
 }
-
 .aboutme-footer-btn {
+  background-color: #d76939;
+  color: #fff;
   font-size: 1.6rem;
+}
+.aboutme-footer-btn:hover {
+  background-color: #0a0a0a;
+  color: #fff;
 }
 
 .carousel-item {
@@ -105,15 +108,12 @@ body {
   background-size: cover;
   z-index: 0;
 }
-
 .carousel-img-one {
   background-image: url("../img/aboutme/aboutme-carousel-1.jpg");
 }
-
 .carousel-img-two {
   background-image: url("../img/aboutme/aboutme-carousel-2.jpg");
 }
-
 .carousel-img-three {
   background-image: url("../img/aboutme/aboutme-carousel-3.jpg");
 }
@@ -122,68 +122,93 @@ body {
 .prices-cards .card {
   max-width: 350px;
   margin: 0 auto;
-  border: 1px solid #212529;
+  border: 1px solid #c4c4c4;
   -webkit-transition: -webkit-transform 0.3s;
   transition: -webkit-transform 0.3s;
   transition: transform 0.3s;
   transition: transform 0.3s, -webkit-transform 0.3s;
 }
-
 .prices-cards .card-body {
   padding: 4rem;
 }
-
 .prices-cards .card-title {
   font-size: 2.6rem;
   font-weight: bold;
   text-transform: uppercase;
 }
-
 .prices-cards .card-icon {
   font-size: 4rem;
 }
-
 .prices-cards .card-button {
   font-size: 1.6rem;
-  font-weight: bold;
-  text-transform: uppercase;
-  border: 1px solid #212529;
+  border: 1px solid #0a0a0a;
 }
-
-.prices-cards .card-two,
-.prices-cards .card-two .prices-cards .card-button {
-  border-color: #fff;
+.prices-cards .card-button:hover {
+  background-color: #0a0a0a;
+  color: #fff;
+}
+.prices-cards .card-two {
+  background-color: #0a0a0a;
+  color: #fff;
+}
+.prices-cards .card-two .card-button {
+  background-color: #d76939;
+  color: #fff;
+}
+.prices-cards .card-two .card-button:hover {
+  background-color: #fff;
+  color: #0a0a0a;
 }
 
 /* --- */
 .contact-info {
   margin-bottom: 0.25em;
 }
-
 .contact-info-title {
   font-size: 2.6rem;
   font-weight: bold;
   text-transform: uppercase;
 }
-
-.contact-info, .contact-form {
-  border: 1px solid #000;
+.contact-info-icon {
+  color: #d76939;
 }
-
+.contact-info, .contact-form {
+  background-color: #fff;
+  color: #0a0a0a;
+  border: 1px solid #0a0a0a;
+}
 .contact-btn {
+  width: 100%;
   font-size: 1.6rem;
+  background-color: #d76939;
+  color: #fff;
+  border: 1px solid #fff;
+}
+.contact-btn:hover {
+  background-color: #0a0a0a;
+  color: #fff;
 }
 
 .contact-form-input, .contact-form-select, .contact-form-area {
   font-size: 1.4rem;
-  border: 1px solid #212529;
+}
+
+/* -- */
+.footer {
+  background-color: #dfe6e8;
+  color: #0a0a0a;
 }
 
 /* --- */
 @media (min-width: 768px) {
+  .aboutme-footer-btn {
+    width: 160px;
+  }
+
   .carousel-item {
     height: 460px;
   }
+
   .prices-cards .card-button {
     font-size: 1.2rem;
   }
@@ -199,6 +224,7 @@ body {
     -webkit-transform: scale(100%);
             transform: scale(100%);
   }
+
   .contact-main {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -211,8 +237,10 @@ body {
   .contact-form {
     width: 70%;
   }
+  .contact-btn {
+    width: 160px;
+  }
 }
-
 @media (min-width: 992px) {
   .section {
     scroll-margin-top: 57px;
@@ -225,8 +253,13 @@ body {
     -webkit-transform: translateX(0);
             transform: translateX(0);
   }
+
   .header {
     height: 65vh;
+  }
+
+  .prices-cards .card {
+    margin: 0;
   }
   .prices-cards .card-body {
     padding: 6rem;
@@ -235,11 +268,11 @@ body {
     font-size: 1.8rem;
   }
 }
-
 @media (min-width: 1400px) {
   .header {
     background-image: url("../img/header-hq.jpg");
   }
+
   .carousel-item {
     height: 450px;
   }
@@ -252,5 +285,4 @@ body {
   .carousel-img-three {
     background-image: url("../img/aboutme/aboutme-carousel-3-hq.jpg");
   }
-}
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */

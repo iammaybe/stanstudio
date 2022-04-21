@@ -1,3 +1,5 @@
+@use 'colors' as *;
+
 *,
 *::before,
 *::after {
@@ -24,7 +26,13 @@ body {
   }
 
   &-light {
-    background-color: #ddd;
+    background-color: $light;
+    color: $dark;
+  }
+
+  &-dark {
+    background-color: $dark;
+    color: $light;
   }
 
   &-title {
@@ -44,14 +52,7 @@ body {
     width: 60px;
     height: 4px;
     transform: translateX(-50%);
-  }
-
-  &-title-light::after {
-    background-color: #6c757d;
-  }
-
-  &-title-dark::after {
-    background-color: #ddd;
+    background-color: $accent;
   }
 }
 
@@ -65,7 +66,16 @@ body {
   z-index: -1;
 }
 
+@mixin btn-hover {
+  background-color: $dark;
+  color: $light;
+}
+
 /* --- */
+
+.navbar {
+  background-color: $dark;
+}
 
 .nav-mobile,
 .navbar-toggler,
@@ -79,6 +89,7 @@ body {
   background-image: url('../img/header.jpg');
   background-position: 65% 50%;
   background-size: cover;
+  color: $light;
   z-index: 0;
 
   &-text {
@@ -93,7 +104,13 @@ body {
     font-size: 1.2rem;
   }
   &-btn {
+    background-color: $accent;
+    color: $light;
     font-size: 1.6rem;
+
+    &:hover {
+      @include btn-hover;
+    }
   }
 }
 
@@ -123,7 +140,7 @@ body {
   .card {
     max-width: 350px;
     margin: 0 auto;
-    border: 1px solid #212529;
+    border: 1px solid #c4c4c4;
     transition: transform 0.3s;
 
     &-body {
@@ -142,14 +159,26 @@ body {
 
     &-button {
       font-size: 1.6rem;
-      font-weight: bold;
-      text-transform: uppercase;
-      border: 1px solid #212529;
+      border: 1px solid $dark;
+
+      &:hover {
+        @include btn-hover;
+      }
     }
 
-    &-two,
-    &-two &-button {
-      border-color: #fff;
+    &-two {
+      background-color: $dark;
+      color: $light;
+
+      .card-button {
+        background-color: $accent;
+        color: $light;
+
+        &:hover {
+          background-color: $light;
+          color: $dark;
+        }
+      }
     }
   }
 }
@@ -159,21 +188,35 @@ body {
 .contact {
   &-info {
     margin-bottom: 0.25em;
-  }
 
-  &-info-title {
-    font-size: 2.6rem;
-    font-weight: bold;
-    text-transform: uppercase;
+    &-title {
+      font-size: 2.6rem;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    &-icon {
+      color: $accent;
+    }
   }
 
   &-info,
   &-form {
-    border: 1px solid #000;
+    background-color: $light;
+    color: $dark;
+    border: 1px solid $dark;
   }
 
   &-btn {
+    width: 100%;
     font-size: 1.6rem;
+    background-color: $accent;
+    color: $light;
+    border: 1px solid $light;
+
+    &:hover {
+      @include btn-hover;
+    }
   }
 }
 
@@ -182,13 +225,25 @@ body {
   &-select,
   &-area {
     font-size: 1.4rem;
-    border: 1px solid #212529;
   }
+}
+
+/* -- */
+
+.footer {
+  background-color: $gray;
+  color: $dark;
 }
 
 /* --- */
 
 @media (min-width: 768px) {
+  .aboutme-footer {
+    &-btn {
+      width: 160px;
+    }
+  }
+
   .carousel {
     &-item {
       height: 460px;
@@ -229,6 +284,10 @@ body {
     &-form {
       width: 70%;
     }
+
+    &-btn {
+      width: 160px;
+    }
   }
 }
 
@@ -252,6 +311,8 @@ body {
 
   .prices-cards {
     .card {
+      margin: 0;
+
       &-body {
         padding: 6rem;
       }
