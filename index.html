@@ -23,8 +23,11 @@
     ></script>
     <link rel="stylesheet" href="css/main.css" />
   </head>
-  <body>
-    <nav class="nav-mobile navbar navbar-dark py-3 sticky-top d-lg-none">
+  <body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="60">
+    <nav
+      class="navbar navbar-expand-lg navbar-dark sticky-top py-3"
+      id="navbar"
+    >
       <div class="container">
         <button
           class="navbar-toggler ms-auto"
@@ -38,10 +41,8 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav pt-4">
-            <a class="nav-link active ms-auto" aria-current="page" href="#"
-              >Home</a
-            >
+          <div class="navbar-nav pt-3 pt-lg-0 m-lg-auto">
+            <a class="nav-link active ms-auto" href="#home">Home</a>
             <a class="nav-link ms-auto" href="#aboutme">O mnie</a>
             <a class="nav-link ms-auto" href="#prices">Cennik</a>
             <a class="nav-link ms-auto" href="#contact">Kontakt</a>
@@ -50,6 +51,7 @@
       </div>
     </nav>
     <header
+      id="home"
       class="header d-flex flex-column justify-content-center align-items-center text-center"
     >
       <h1 class="display-1"><span class="fw-bold">Stan</span>Studio</h1>
@@ -58,23 +60,6 @@
       </p>
       <div class="hero-shadow"></div>
     </header>
-    <nav
-      class="nav-desktop navbar navbar-expand-lg navbar-dark py-3 sticky-top d-none d-lg-block"
-    >
-      <div class="container">
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav m-auto">
-            <a class="nav-link active px-4" aria-current="page" href="#"
-              >Home</a
-            >
-            <a class="nav-link px-5" href="#aboutme">O mnie</a>
-            <a class="nav-link px-5" href="#prices">Cennik</a>
-            <a class="nav-link px-5" href="#contact">Kontakt</a>
-          </div>
-        </div>
-      </div>
-    </nav>
-
     <main>
       <section id="aboutme" class="aboutme section section-light py-5">
         <div class="container py-4 py-lg-5">

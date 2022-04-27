@@ -10,16 +10,15 @@
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
+  scroll-padding-top: 57px;
 }
 
 body {
+  position: relative;
   font-family: "Poppins", sans-serif;
   font-size: 1.6rem;
 }
 
-.section {
-  scroll-margin-top: 57px;
-}
 .section-padding {
   padding: 0 7.5px;
 }
@@ -68,9 +67,8 @@ body {
   background-color: #0a0a0a;
 }
 
-.nav-mobile,
-.navbar-toggler,
-.nav-desktop {
+.navbar,
+.navbar-toggler {
   font-size: 2rem;
 }
 
@@ -242,9 +240,10 @@ body {
   }
 }
 @media (min-width: 992px) {
-  .section {
-    scroll-margin-top: 57px;
+  html {
+    scroll-padding-top: 58px;
   }
+
   .section-title {
     margin-left: 7.5px;
   }
