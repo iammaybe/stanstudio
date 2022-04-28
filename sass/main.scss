@@ -30,6 +30,11 @@ body {
     color: $dark;
   }
 
+  &-gray {
+    background-color: $gray;
+    color: $light;
+  }
+
   &-dark {
     background-color: $dark;
     color: $light;
@@ -117,23 +122,25 @@ body {
   }
 }
 
-.carousel {
-  &-item {
-    position: relative;
-    height: 350px;
-    background-position: center;
-    background-size: cover;
-    z-index: 0;
-  }
+.aboutme-carousel {
+  .carousel {
+    &-item {
+      position: relative;
+      height: 350px;
+      background-position: center;
+      background-size: cover;
+      z-index: 0;
+    }
 
-  &-img-one {
-    background-image: url('../img/aboutme/aboutme-carousel-1.jpg');
-  }
-  &-img-two {
-    background-image: url('../img/aboutme/aboutme-carousel-2.jpg');
-  }
-  &-img-three {
-    background-image: url('../img/aboutme/aboutme-carousel-3.jpg');
+    &-img-one {
+      background-image: url('../img/aboutme/aboutme-carousel-1.jpg');
+    }
+    &-img-two {
+      background-image: url('../img/aboutme/aboutme-carousel-2.jpg');
+    }
+    &-img-three {
+      background-image: url('../img/aboutme/aboutme-carousel-3.jpg');
+    }
   }
 }
 
@@ -247,9 +254,11 @@ body {
     }
   }
 
-  .carousel {
-    &-item {
-      height: 460px;
+  .aboutme-carousel {
+    .carousel {
+      &-item {
+        height: 460px;
+      }
     }
   }
 
@@ -344,9 +353,11 @@ body {
     background-image: url('../img/header-hq.jpg');
   }
 
-  .carousel {
-    &-item {
-      height: 450px;
+  .aboutme-carousel {
+    .carousel {
+      &-item {
+        height: 450px;
+      }
     }
 
     &-img-one {
