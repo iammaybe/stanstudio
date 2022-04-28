@@ -66,6 +66,9 @@ body {
 .navbar {
   background-color: #0a0a0a;
 }
+.navbar .nav-link {
+  margin-left: auto;
+}
 
 .navbar,
 .navbar-toggler {
@@ -241,7 +244,7 @@ body {
 }
 @media (min-width: 992px) {
   html {
-    scroll-padding-top: 58px;
+    scroll-padding-top: 59px;
   }
 
   .section-title {
@@ -251,6 +254,10 @@ body {
     left: 2px;
     -webkit-transform: translateX(0);
             transform: translateX(0);
+  }
+
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding: 0.5rem 2rem;
   }
 
   .header {

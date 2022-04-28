@@ -75,6 +75,10 @@ body {
 
 .navbar {
   background-color: $dark;
+
+  .nav-link {
+    margin-left: auto;
+  }
 }
 
 .navbar,
@@ -292,7 +296,7 @@ body {
 
 @media (min-width: 992px) {
   html {
-    scroll-padding-top: 58px;
+    scroll-padding-top: 59px;
   }
 
   .section {
@@ -303,6 +307,16 @@ body {
     &-title::after {
       left: 2px;
       transform: translateX(0);
+    }
+  }
+
+  .navbar {
+    &-expand-lg {
+      .navbar-nav {
+        .nav-link {
+          padding: 0.5rem 2rem;
+        }
+      }
     }
   }
 
