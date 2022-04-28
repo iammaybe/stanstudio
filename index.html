@@ -258,47 +258,48 @@
           <h3 class="section-title mb-4">kontakt</h3>
           <div class="contact-main section-padding row m-0 py-5">
             <div
-              class="contact-info col-12 col-lg-3 d-flex flex-column justify-content-center align-items-center p-4 p-lg-5"
+              class="contact-info col-12 col-md-4 d-flex flex-column justify-content-center align-items-center justify-content-md-start align-items-md-start p-4 p-md-5 mb-4 mb-md-0"
             >
-              <p class="contact-info-title mb-4">adres</p>
-
-              <div class="contact-info-info text-start">
-                <p class="m-0">
-                  <i class="contact-info-icon fa-solid fa-house"></i> ul.
-                  Agrestowa 15
-                </p>
-                <p>
-                  <i class="contact-info-icon fa-solid fa-city"></i> 30-210
-                  Kraków
-                </p>
-                <p class="m-0">
-                  <i class="contact-info-icon fa-solid fa-phone"></i> +48 751
-                  525 729
-                </p>
-                <p class="m-0">
-                  <i class="contact-info-icon fa-solid fa-envelope"></i>
-                  mail@stanstudio.pl
-                </p>
+              <p class="contact-info-title mb-3 mb-lg-4">Adres</p>
+              <div class="contact-info-text py-3">
+                <div class="d-flex align-items-center py-3 py-lg-4">
+                  <i class="contact-info-icon fa-solid fa-house me-4"></i>
+                  <address class="m-0">
+                    <p class="m-0">ul. Agrestowa 15</p>
+                    <p class="m-0">30-210 Kraków</p>
+                  </address>
+                </div>
+                <div class="d-flex align-items-center py-3 py-lg-4">
+                  <i class="contact-info-icon fa-solid fa-phone me-4"></i>
+                  <p class="m-0">+48 751 525 729</p>
+                </div>
+                <div class="d-flex align-items-center py-3 py-lg-4">
+                  <i class="contact-info-icon fa-solid fa-envelope me-4"></i>
+                  <p class="m-0">mail@stanstudio.pl</p>
+                </div>
               </div>
             </div>
-            <div class="contact-form col-12 col-lg-9 p-4 p-lg-5">
+
+            <div class="contact-form col-12 col-md-7 p-4 p-md-5">
               <form class="mt-3">
                 <div class="row">
                   <div class="col-md-6">
                     <div class="form-group mb-4">
-                      <label>Imię i nazwisko:</label>
+                      <label class="contact-required">Imię i nazwisko:</label>
                       <input
                         type="text"
                         class="contact-form-input form-control"
+                        required
                       />
                     </div>
                   </div>
                   <div class="col-md-6">
                     <div class="form-group mb-4">
-                      <label>Adres mailowy:</label>
+                      <label class="contact-required">E-mail:</label>
                       <input
                         type="email"
                         class="contact-form-input form-control"
+                        required
                       />
                     </div>
                   </div>
@@ -324,10 +325,14 @@
                     ></textarea>
                   </div>
                 </div>
+                <div class="d-flex justify-content-md-end mt-md-5">
+                  <input
+                    type="submit"
+                    value="Wyślij wiadomość"
+                    class="contact-btn btn px-5 py-4"
+                  />
+                </div>
               </form>
-              <div class="d-flex justify-content-md-end mt-lg-5">
-                <a href="#" class="contact-btn btn px-5 py-3">Wyślij</a>
-              </div>
             </div>
           </div>
         </div>

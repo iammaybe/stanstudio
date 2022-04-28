@@ -166,21 +166,22 @@ body {
 }
 
 /* --- */
-.contact-info {
-  margin-bottom: 0.25em;
-}
 .contact-info-title {
-  font-size: 2.6rem;
-  font-weight: bold;
-  text-transform: uppercase;
+  font-size: 2.4rem;
 }
 .contact-info-icon {
+  font-size: 2.4rem;
   color: #d76939;
 }
 .contact-info, .contact-form {
   background-color: #fff;
   color: #0a0a0a;
   border: 1px solid #0a0a0a;
+}
+.contact-required::after {
+  content: "*";
+  color: #e32;
+  display: inline;
 }
 .contact-btn {
   width: 100%;
@@ -236,14 +237,14 @@ body {
             justify-content: space-between;
   }
   .contact-info {
-    width: 29.5%;
+    width: 38%;
     margin-bottom: 0;
   }
   .contact-form {
-    width: 70%;
+    width: 60%;
   }
   .contact-btn {
-    width: 160px;
+    width: 200px;
   }
 }
 @media (min-width: 992px) {
@@ -276,6 +277,16 @@ body {
   }
   .prices-cards .card-button {
     font-size: 1.8rem;
+  }
+
+  .contact-info {
+    width: 33%;
+  }
+  .contact-info-icon {
+    font-size: 2.8rem;
+  }
+  .contact-form {
+    width: 64%;
   }
 }
 @media (min-width: 1400px) {
