@@ -125,7 +125,6 @@ body {
 
 /* --- */
 .prices-cards .card {
-  max-width: 350px;
   margin: 0 auto;
   border: 1px solid #c4c4c4;
   -webkit-transition: -webkit-transform 0.3s;
@@ -134,18 +133,24 @@ body {
   transition: transform 0.3s, -webkit-transform 0.3s;
 }
 .prices-cards .card-body {
-  padding: 4rem;
+  padding: 3rem;
 }
 .prices-cards .card-title {
   font-size: 2.6rem;
-  font-weight: bold;
-  text-transform: uppercase;
 }
-.prices-cards .card-icon {
-  font-size: 4rem;
+.prices-cards .card-text-divider {
+  border-top: 1px solid #fff;
+  width: 180px;
+}
+.prices-cards .card-text-divider--accent {
+  border-color: #d76939;
+}
+.prices-cards .card-text-price {
+  font-size: 2.4rem;
 }
 .prices-cards .card-button {
   font-size: 1.6rem;
+  width: 180px;
   border: 1px solid #0a0a0a;
 }
 .prices-cards .card-button:hover {
@@ -181,7 +186,6 @@ body {
 .contact-required::after {
   content: "*";
   color: #e32;
-  display: inline;
 }
 .contact-btn {
   width: 100%;
@@ -201,6 +205,7 @@ body {
 
 /* -- */
 .footer {
+  padding: 0 1.5rem;
   background-color: #dfe6e8;
   color: #0a0a0a;
 }
@@ -215,8 +220,12 @@ body {
     height: 460px;
   }
 
+  .prices-cards .card-text-divider {
+    width: 150px;
+  }
   .prices-cards .card-button {
     font-size: 1.2rem;
+    width: 150px;
   }
   .prices-cards .card-one, .prices-cards .card-three {
     -webkit-transform: scale(85%);
@@ -272,11 +281,19 @@ body {
   .prices-cards .card {
     margin: 0;
   }
+  .prices-cards .card-text-divider {
+    width: 200px;
+  }
+  .prices-cards .card-button {
+    font-size: 1.6rem;
+    width: 200px;
+  }
   .prices-cards .card-body {
-    padding: 6rem;
+    padding: 6rem 5rem;
   }
   .prices-cards .card-button {
     font-size: 1.8rem;
+    max-width: 200px;
   }
 
   .contact-info {

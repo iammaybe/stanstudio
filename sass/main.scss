@@ -148,27 +148,34 @@ body {
 
 .prices-cards {
   .card {
-    max-width: 350px;
     margin: 0 auto;
     border: 1px solid #c4c4c4;
     transition: transform 0.3s;
 
     &-body {
-      padding: 4rem;
+      padding: 3rem;
     }
 
     &-title {
       font-size: 2.6rem;
-      font-weight: bold;
-      text-transform: uppercase;
     }
 
-    &-icon {
-      font-size: 4rem;
+    &-text-divider {
+      border-top: 1px solid $light;
+      width: 180px;
+
+      &--accent {
+        border-color: $accent;
+      }
+    }
+
+    &-text-price {
+      font-size: 2.4rem;
     }
 
     &-button {
       font-size: 1.6rem;
+      width: 180px;
       border: 1px solid $dark;
 
       &:hover {
@@ -217,7 +224,6 @@ body {
   &-required::after {
     content: '*';
     color: #e32;
-    display: inline;
   }
 
   &-btn {
@@ -244,6 +250,7 @@ body {
 /* -- */
 
 .footer {
+  padding: 0 1.5rem;
   background-color: $gray;
   color: $dark;
 }
@@ -267,8 +274,13 @@ body {
 
   .prices-cards {
     .card {
+      &-text-divider {
+        width: 150px;
+      }
+
       &-button {
         font-size: 1.2rem;
+        width: 150px;
       }
 
       &-one,
@@ -340,12 +352,22 @@ body {
     .card {
       margin: 0;
 
+      &-text-divider {
+        width: 200px;
+      }
+
+      &-button {
+        font-size: 1.6rem;
+        width: 200px;
+      }
+
       &-body {
-        padding: 6rem;
+        padding: 6rem 5rem;
       }
 
       &-button {
         font-size: 1.8rem;
+        max-width: 200px;
       }
     }
   }
