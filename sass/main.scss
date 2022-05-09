@@ -22,7 +22,7 @@ body {
 
 .section {
   &-padding {
-    padding: 0 7.5px;
+    padding: 6.4rem 0;
   }
 
   &-light {
@@ -45,8 +45,6 @@ body {
     margin: 0 auto;
     width: fit-content;
     font-size: 3.2rem;
-    font-weight: bold;
-    text-transform: uppercase;
   }
 
   &-title::after {
@@ -61,6 +59,10 @@ body {
   }
 }
 
+.container {
+  padding: 0 2rem;
+}
+
 .hero-shadow {
   position: absolute;
   top: 0;
@@ -69,6 +71,10 @@ body {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.6);
   z-index: -1;
+}
+
+.content-margin {
+  margin: 4.8rem 0 0;
 }
 
 @mixin btn-hover {
@@ -106,6 +112,12 @@ body {
 }
 
 /* --- */
+
+.aboutme {
+  &-img {
+    object-fit: cover;
+  }
+}
 
 .aboutme-footer {
   &-text {
@@ -147,6 +159,10 @@ body {
 /* --- */
 
 .prices-cards {
+  .card-col {
+    margin-bottom: 2rem;
+  }
+
   .card {
     margin: 0 auto;
     border: 1px solid #c4c4c4;
@@ -204,6 +220,8 @@ body {
 
 .contact {
   &-info {
+    margin-bottom: 2rem;
+
     &-title {
       font-size: 2.4rem;
     }
@@ -241,7 +259,10 @@ body {
 
 .contact-form {
   &-input,
-  &-select,
+  &-select {
+    font-size: 1.4rem;
+    height: 4rem;
+  }
   &-area {
     font-size: 1.4rem;
   }
@@ -250,7 +271,7 @@ body {
 /* -- */
 
 .footer {
-  padding: 0 1.5rem;
+  padding: 4rem 2rem;
   background-color: $gray;
   color: $dark;
 }
@@ -258,9 +279,19 @@ body {
 /* --- */
 
 @media (min-width: 768px) {
+  .section {
+    &-padding {
+      padding: 8rem 0;
+    }
+  }
+
+  .container {
+    padding: 0 1.6rem;
+  }
+
   .aboutme-footer {
     &-btn {
-      width: 160px;
+      width: 200px;
     }
   }
 
@@ -273,6 +304,9 @@ body {
   }
 
   .prices-cards {
+    .card-col {
+      margin-bottom: 0;
+    }
     .card {
       &-text-divider {
         width: 150px;
@@ -324,10 +358,6 @@ body {
   }
 
   .section {
-    &-title {
-      margin-left: 7.5px;
-    }
-
     &-title::after {
       left: 2px;
       transform: translateX(0);
@@ -388,6 +418,12 @@ body {
 }
 
 @media (min-width: 1400px) {
+  .section {
+    &-padding {
+      padding: 10rem 0;
+    }
+  }
+
   .header {
     background-image: url('../img/header-hq.jpg');
   }

@@ -20,7 +20,7 @@ body {
 }
 
 .section-padding {
-  padding: 0 7.5px;
+  padding: 6.4rem 0;
 }
 .section-light {
   background-color: #fff;
@@ -41,8 +41,6 @@ body {
   width: -moz-fit-content;
   width: fit-content;
   font-size: 3.2rem;
-  font-weight: bold;
-  text-transform: uppercase;
 }
 .section-title::after {
   content: "";
@@ -56,6 +54,10 @@ body {
   background-color: #d76939;
 }
 
+.container {
+  padding: 0 2rem;
+}
+
 .hero-shadow {
   position: absolute;
   top: 0;
@@ -64,6 +66,10 @@ body {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.6);
   z-index: -1;
+}
+
+.content-margin {
+  margin: 4.8rem 0 0;
 }
 
 /* --- */
@@ -93,6 +99,11 @@ body {
 }
 
 /* --- */
+.aboutme-img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .aboutme-footer-text {
   font-size: 1.2rem;
 }
@@ -124,6 +135,9 @@ body {
 }
 
 /* --- */
+.prices-cards .card-col {
+  margin-bottom: 2rem;
+}
 .prices-cards .card {
   margin: 0 auto;
   border: 1px solid #c4c4c4;
@@ -171,6 +185,9 @@ body {
 }
 
 /* --- */
+.contact-info {
+  margin-bottom: 2rem;
+}
 .contact-info-title {
   font-size: 2.4rem;
 }
@@ -199,27 +216,42 @@ body {
   color: #fff;
 }
 
-.contact-form-input, .contact-form-select, .contact-form-area {
+.contact-form-input, .contact-form-select {
+  font-size: 1.4rem;
+  height: 4rem;
+}
+.contact-form-area {
   font-size: 1.4rem;
 }
 
 /* -- */
 .footer {
-  padding: 0 1.5rem;
+  padding: 4rem 2rem;
   background-color: #dfe6e8;
   color: #0a0a0a;
 }
 
 /* --- */
 @media (min-width: 768px) {
+  .section-padding {
+    padding: 8rem 0;
+  }
+
+  .container {
+    padding: 0 1.6rem;
+  }
+
   .aboutme-footer-btn {
-    width: 160px;
+    width: 200px;
   }
 
   .aboutme-carousel .carousel-item {
     height: 460px;
   }
 
+  .prices-cards .card-col {
+    margin-bottom: 0;
+  }
   .prices-cards .card-text-divider {
     width: 150px;
   }
@@ -261,9 +293,6 @@ body {
     scroll-padding-top: 59px;
   }
 
-  .section-title {
-    margin-left: 7.5px;
-  }
   .section-title::after {
     left: 2px;
     -webkit-transform: translateX(0);
@@ -307,6 +336,10 @@ body {
   }
 }
 @media (min-width: 1400px) {
+  .section-padding {
+    padding: 10rem 0;
+  }
+
   .header {
     background-image: url("../img/header-hq.jpg");
   }
