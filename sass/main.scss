@@ -99,9 +99,9 @@ body {
 
 .header {
   position: relative;
-  height: 95vh;
+  height: 96vh;
   background-image: url('../img/header.jpg');
-  background-position: 65% 50%;
+  background-position: 50% 25%;
   background-size: cover;
   color: $light;
   z-index: 0;
@@ -372,10 +372,6 @@ body {
         }
       }
     }
-  }
-
-  .header {
-    height: 65vh;
   }
 
   .prices-cards {
