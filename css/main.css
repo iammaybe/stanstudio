@@ -26,10 +26,6 @@ body {
   background-color: #fff;
   color: #0a0a0a;
 }
-.section-gray {
-  background-color: #dfe6e8;
-  color: #fff;
-}
 .section-dark {
   background-color: #0a0a0a;
   color: #fff;
@@ -120,11 +116,11 @@ body {
 }
 
 .aboutme-carousel .carousel-item {
-  position: relative;
-  height: 350px;
+  height: 400px;
+  background-attachment: fixed;
   background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
-  z-index: 0;
 }
 .aboutme-carousel .carousel-img-one {
   background-image: url("../img/aboutme/aboutme-carousel-1.jpg");
@@ -248,7 +244,7 @@ body {
   }
 
   .aboutme-carousel .carousel-item {
-    height: 460px;
+    height: 500px;
   }
 
   .prices-cards .card-col {
@@ -343,7 +339,7 @@ body {
   }
 
   .aboutme-carousel .carousel-item {
-    height: 450px;
+    height: 650px;
   }
   .aboutme-carousel-img-one {
     background-image: url("../img/aboutme/aboutme-carousel-1-hq.jpg");
