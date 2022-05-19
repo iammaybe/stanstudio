@@ -10,7 +10,7 @@
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
-  scroll-padding-top: 57px;
+  scroll-padding-top: 59px;
 }
 
 body {
@@ -61,7 +61,11 @@ body {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.35);
-  z-index: -2;
+  z-index: -1;
+}
+
+.shadow-bg {
+  background-color: rgba(0, 0, 0, 0.75);
 }
 
 .content-margin {
@@ -70,11 +74,14 @@ body {
 
 /* --- */
 .navbar {
-  background-color: #0a0a0a;
+  font-size: 2rem;
+  color: #fff;
+  -webkit-transition: background-color 0.6s;
+  transition: background-color 0.6s;
 }
 .navbar .nav-link {
   margin-left: auto;
-  color: #0a0a0a;
+  color: rgba(221, 221, 221, 0.5);
 }
 .navbar .nav-link:hover {
   color: #dfe6e8;
@@ -83,19 +90,10 @@ body {
   color: #fff;
 }
 
-.navbar {
-  font-size: 2rem;
-}
-
 .navbar-toggler {
   font-size: 2.5rem;
-  border: 0;
-}
-
-.navbar,
-.navbar-toggler {
-  background-color: transparent;
   color: #fff;
+  border: 0;
 }
 
 .navbar-toggler-bars {
@@ -109,7 +107,7 @@ body {
   background-position: 60% 0%;
   background-size: cover;
   color: #fff;
-  z-index: -1;
+  z-index: 0;
 }
 .header-text {
   padding: 0 15px;
@@ -316,10 +314,6 @@ body {
   }
 }
 @media (min-width: 992px) {
-  html {
-    scroll-padding-top: 59px;
-  }
-
   .section-title::after {
     left: 2px;
     -webkit-transform: translateX(0);
