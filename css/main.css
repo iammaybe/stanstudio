@@ -10,7 +10,7 @@
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
-  scroll-padding-top: 59px;
+  scroll-padding-top: 6.3rem;
 }
 
 body {
@@ -73,33 +73,22 @@ body {
 }
 
 /* --- */
-.navbar {
+.nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 0;
   font-size: 2rem;
   color: #fff;
   -webkit-transition: background-color 0.6s;
   transition: background-color 0.6s;
+  z-index: 999;
 }
-.navbar .nav-link {
-  margin-left: auto;
-  color: rgba(221, 221, 221, 0.5);
-}
-.navbar .nav-link:hover {
-  color: #dfe6e8;
-}
-.navbar .nav-link.active {
-  color: #fff;
+.nav .container {
+  padding: 0;
 }
 
-.navbar-toggler {
-  font-size: 2.5rem;
-  color: #fff;
-  border: 0;
-}
-
-.navbar-toggler-bars {
-  padding: 0.5rem;
-}
-
+/* -- */
 .header {
   position: relative;
   height: 100vh;
@@ -135,7 +124,7 @@ body {
 }
 
 .aboutme-carousel .carousel-item {
-  height: 400px;
+  height: 350px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -258,12 +247,8 @@ body {
     padding: 0 1.6rem;
   }
 
-  .navbar-toggler {
-    font-size: 3rem;
-  }
-
-  .navbar-toggler-bars {
-    padding: 0.25rem;
+  .nav {
+    padding: 0.4rem 0;
   }
 
   .aboutme-footer-btn {
@@ -271,7 +256,7 @@ body {
   }
 
   .aboutme-carousel .carousel-item {
-    height: 500px;
+    height: 450px;
   }
 
   .prices-cards .card-col {
@@ -320,8 +305,8 @@ body {
             transform: translateX(0);
   }
 
-  .navbar-expand-lg .navbar-nav .nav-link {
-    padding: 0.5rem 2rem;
+  .nav .container {
+    padding: 0 1.6rem;
   }
 
   .prices-cards .card {
@@ -362,7 +347,7 @@ body {
   }
 
   .aboutme-carousel .carousel-item {
-    height: 650px;
+    height: 550px;
   }
   .aboutme-carousel-img-one {
     background-image: url("../img/aboutme/aboutme-carousel-1-hq.jpg");

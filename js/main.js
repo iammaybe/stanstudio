@@ -1,4 +1,4 @@
-let nav, navCollapse;
+let nav, navBtn;
 
 const main = () => {
   prepareDOMElements();
@@ -6,13 +6,13 @@ const main = () => {
 };
 
 const prepareDOMElements = () => {
-  nav = document.querySelector('.navbar');
-  navCollapse = document.querySelector('.navbar-collapse');
+  nav = document.querySelector('.nav');
+  navBtn = document.querySelector('.hamburger');
 };
 
 const prepareDOMEvents = () => {
   window.addEventListener('scroll', addShadow);
-  document.addEventListener('click', closeNav);
+  navBtn.addEventListener('click', handleNav);
 };
 
 const addShadow = () =>
@@ -20,10 +20,8 @@ const addShadow = () =>
     ? nav.classList.add('shadow-bg')
     : nav.classList.remove('shadow-bg');
 
-const closeNav = () => {
-  if (navCollapse.classList.contains('show')) {
-    navCollapse.classList.remove('show');
-  }
-};
-
 document.addEventListener('DOMContentLoaded', main);
+
+const handleNav = () => {
+  navBtn.classList.toggle('is-active');
+};
