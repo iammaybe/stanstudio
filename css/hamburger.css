@@ -23,7 +23,6 @@
   background-color: transparent;
   border: 0;
   margin: 0;
-  margin-left: auto;
   overflow: visible;
 }
 
@@ -141,10 +140,4 @@
   transition: bottom 0.1s ease-out, -webkit-transform 0.22s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
   transition: bottom 0.1s ease-out, transform 0.22s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
   transition: bottom 0.1s ease-out, transform 0.22s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-transform 0.22s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
-}
-
-@media (min-width: 768px) {
-  .hamburger {
-    padding: 1.6rem;
-  }
 }/*# sourceMappingURL=hamburger.css.map */
