@@ -25,7 +25,7 @@
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="64">
-    <nav class="navbar navbar-expand-lg fixed-top">
+    <nav id="#navbar" class="navbar navbar-expand-lg fixed-top">
       <div class="container">
         <button
           class="hamburger hamburger--spin navbar-toggler ms-auto"
@@ -56,10 +56,12 @@
       class="header d-flex flex-column justify-content-center align-items-center text-center"
     >
       <div class="header-text">
-        <h1 class="display-1">
-          <span class="accent-span fw-bold">Stan</span>Studio
-        </h1>
-        <p class="m-0">Zatrzymaj czas i uchwyć to, co najcenniejsze.</p>
+        <div class="container">
+          <h1 class="display-1">
+            <span class="accent-span fw-bold">Stan</span>Studio
+          </h1>
+          <p class="m-0">Zatrzymaj czas i uchwyć to, co najcenniejsze.</p>
+        </div>
       </div>
       <div class="hero-shadow"></div>
     </header>
@@ -70,7 +72,7 @@
         class="aboutme section section-light section-padding"
       >
         <div class="container">
-          <h3 class="section-title m-lg-0">O mnie</h3>
+          <h3 class="section-title text-center">O mnie</h3>
           <div class="aboutme-main content-margin row">
             <div
               class="aboutme-photo col-12 col-lg-4 d-flex flex-column flex-lg-row justify-content-center p-0 pe-lg-5 mb-5 mb-lg-0"
@@ -93,14 +95,16 @@
                   potenti morbi lacus vel. Purus eu quam velit ac gravida et
                   integer et. Aliquet nunc non netus risus natoque lorem
                   consectetur. Lorem ipsum dolor, sit amet consectetur
-                  adipisicing elit. Tenetur, incidunt.
+                  adipisicing elit. Tenetur, incidunt. Lorem ipsum dolor, sit
+                  amet consectetur adipisicing elit. Lorem ipsum dolor sit amet.
                 </p>
                 <p class="lead">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Suspendisse purus vestibulum bibendum accumsan. Et euismod
                   potenti morbi lacus vel. Purus eu quam velit ac gravida et
                   integer et. Aliquet nunc non netus risus natoque lorem
-                  consectetur
+                  consectetur. Lorem ipsum, dolor sit amet consectetur
+                  adipisicing elit. Sint, voluptatem.
                 </p>
               </div>
 
@@ -135,7 +139,7 @@
 
       <section id="prices" class="prices section section-light section-padding">
         <div class="container">
-          <h3 class="section-title m-lg-0">Cennik</h3>
+          <h3 class="section-title text-center">Cennik</h3>
           <div class="prices-cards content-margin text-center">
             <div class="row row-cols-1 row-cols-md-3 m-0">
               <div class="card-col col mt-0 p-0">
@@ -209,7 +213,7 @@
         class="contact section section-dark section-padding"
       >
         <div class="container">
-          <h3 class="section-title m-lg-0">Kontakt</h3>
+          <h3 class="section-title text-center">Kontakt</h3>
           <div class="contact-main content-margin row">
             <div
               class="contact-info col-12 col-md-4 d-flex flex-column justify-content-center align-items-center justify-content-md-start align-items-md-start p-5"

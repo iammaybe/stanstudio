@@ -29,8 +29,7 @@ const handleNav = () => {
 const closeNav = () => {
   if (navCollapse.classList.contains('show')) {
     navCollapse.classList.remove('show');
-    navBtn.classList.toggle('is-active');
+    handleNav();
   }
 };
-
 document.addEventListener('DOMContentLoaded', main);

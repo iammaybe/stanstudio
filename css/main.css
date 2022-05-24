@@ -32,19 +32,15 @@ body {
 }
 .section-title {
   position: relative;
-  margin: 0 auto;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
   font-size: 3.2rem;
 }
 .section-title::after {
   content: "";
   position: absolute;
   left: 50%;
-  bottom: -6px;
-  width: 60px;
-  height: 4px;
+  bottom: -0.8rem;
+  width: 6rem;
+  height: 0.4rem;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   background-color: #d76939;
@@ -129,7 +125,7 @@ body {
 }
 
 .aboutme-carousel .carousel-item {
-  height: 350px;
+  height: 35rem;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -165,7 +161,7 @@ body {
 }
 .prices-cards .card-text-divider {
   border-top: 1px solid #fff;
-  width: 180px;
+  width: 18rem;
 }
 .prices-cards .card-text-divider--accent {
   border-color: #d76939;
@@ -175,7 +171,7 @@ body {
 }
 .prices-cards .card-button {
   font-size: 1.6rem;
-  width: 180px;
+  width: 18rem;
   border: 1px solid #0a0a0a;
 }
 .prices-cards .card-button:hover {
@@ -253,22 +249,22 @@ body {
   }
 
   .aboutme-footer-btn {
-    width: 200px;
+    width: 20rem;
   }
 
   .aboutme-carousel .carousel-item {
-    height: 450px;
+    height: 45rem;
   }
 
   .prices-cards .card-col {
     margin-bottom: 0;
   }
   .prices-cards .card-text-divider {
-    width: 150px;
+    width: 15rem;
   }
   .prices-cards .card-button {
     font-size: 1.2rem;
-    width: 150px;
+    width: 15rem;
   }
   .prices-cards .card-one, .prices-cards .card-three {
     -webkit-transform: scale(85%);
@@ -296,16 +292,10 @@ body {
     width: 60%;
   }
   .contact-btn {
-    width: 200px;
+    width: 20rem;
   }
 }
 @media (min-width: 992px) {
-  .section-title::after {
-    left: 2px;
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-
   .navbar-collapse {
     padding: 0.1rem 0;
   }
@@ -321,18 +311,18 @@ body {
     margin: 0;
   }
   .prices-cards .card-text-divider {
-    width: 200px;
+    width: 20rem;
   }
   .prices-cards .card-button {
     font-size: 1.6rem;
-    width: 200px;
+    width: 20rem;
   }
   .prices-cards .card-body {
     padding: 6rem 5rem;
   }
   .prices-cards .card-button {
     font-size: 1.8rem;
-    max-width: 200px;
+    max-width: 20rem;
   }
 
   .contact-info {
@@ -355,7 +345,7 @@ body {
   }
 
   .aboutme-carousel .carousel-item {
-    height: 550px;
+    height: 55rem;
   }
   .aboutme-carousel-img-one {
     background-image: url("../img/aboutme/aboutme-carousel-1-hq.jpg");
