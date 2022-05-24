@@ -124,21 +124,21 @@ body {
   color: #fff;
 }
 
-.aboutme-carousel .carousel-item {
+.bg-carousel .carousel-item {
   height: 35rem;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-.aboutme-carousel .carousel-img-one {
-  background-image: url("../img/aboutme/aboutme-carousel-1.jpg");
+.bg-carousel .carousel-img-one {
+  background-image: url("../img/bg-carousel/bg-carousel-1.jpg");
 }
-.aboutme-carousel .carousel-img-two {
-  background-image: url("../img/aboutme/aboutme-carousel-2.jpg");
+.bg-carousel .carousel-img-two {
+  background-image: url("../img/bg-carousel/bg-carousel-2.jpg");
 }
-.aboutme-carousel .carousel-img-three {
-  background-image: url("../img/aboutme/aboutme-carousel-3.jpg");
+.bg-carousel .carousel-img-three {
+  background-image: url("../img/bg-carousel/bg-carousel-3.jpg");
 }
 
 /* --- */
@@ -252,7 +252,7 @@ body {
     width: 20rem;
   }
 
-  .aboutme-carousel .carousel-item {
+  .bg-carousel .carousel-item {
     height: 45rem;
   }
 
@@ -344,16 +344,16 @@ body {
     background-image: url("../img/header-hq.jpg");
   }
 
-  .aboutme-carousel .carousel-item {
+  .bg-carousel .carousel-item {
     height: 55rem;
   }
-  .aboutme-carousel-img-one {
-    background-image: url("../img/aboutme/aboutme-carousel-1-hq.jpg");
+  .bg-carousel-img-one {
+    background-image: url("../img/bg-carousel/bg-carousel-1-hq.jpg");
   }
-  .aboutme-carousel-img-two {
-    background-image: url("../img/aboutme/aboutme-carousel-2-hq.jpg");
+  .bg-carousel-img-two {
+    background-image: url("../img/bg-carousel/bg-carousel-2-hq.jpg");
   }
-  .aboutme-carousel-img-three {
-    background-image: url("../img/aboutme/aboutme-carousel-3-hq.jpg");
+  .bg-carousel-img-three {
+    background-image: url("../img/bg-carousel/bg-carousel-3-hq.jpg");
   }
 }/*# sourceMappingURL=main.css.map */
