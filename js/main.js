@@ -22,13 +22,10 @@ const addShadow = () =>
     ? nav.classList.add('shadow-bg')
     : nav.classList.remove('shadow-bg');
 
-const handleNav = () => {
-  if (navBtn.ariaExpanded === 'true') {
-    navBtn.classList.add('is-active');
-  } else {
-    navBtn.classList.remove('is-active');
-  }
-};
+const handleNav = () =>
+  navBtn.ariaExpanded === 'true'
+    ? navBtn.classList.add('is-active')
+    : navBtn.classList.remove('is-active');
 
 const closeNav = () => {
   if (navCollapse.classList.contains('show')) {
