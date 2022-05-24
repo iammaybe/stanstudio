@@ -23,13 +23,19 @@ const addShadow = () =>
     : nav.classList.remove('shadow-bg');
 
 const handleNav = () => {
-  navBtn.classList.toggle('is-active');
+  if (navBtn.ariaExpanded === 'true') {
+    navBtn.classList.add('is-active');
+  } else {
+    navBtn.classList.remove('is-active');
+  }
 };
 
 const closeNav = () => {
   if (navCollapse.classList.contains('show')) {
+    navBtn.ariaExpanded = 'false';
+    navBtn.classList.remove('is-active');
     navCollapse.classList.remove('show');
-    handleNav();
   }
 };
+
 document.addEventListener('DOMContentLoaded', main);
