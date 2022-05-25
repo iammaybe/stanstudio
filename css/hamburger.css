@@ -6,7 +6,7 @@
  * @link https://github.com/jonsuh/hamburgers
  */
 .hamburger {
-  padding: 2rem;
+  padding: 1.6rem;
   display: inline-block;
   cursor: pointer;
   -webkit-transition-property: opacity, -webkit-filter;
@@ -85,18 +85,6 @@
   bottom: -1rem;
 }
 
-.hamburger--spin {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
 .hamburger--spin .hamburger-inner {
   -webkit-transition-duration: 0.22s;
           transition-duration: 0.22s;
@@ -140,4 +128,15 @@
   transition: bottom 0.1s ease-out, -webkit-transform 0.22s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
   transition: bottom 0.1s ease-out, transform 0.22s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
   transition: bottom 0.1s ease-out, transform 0.22s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-transform 0.22s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.hamburger--spin {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }/*# sourceMappingURL=hamburger.css.map */
