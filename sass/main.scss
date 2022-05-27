@@ -108,7 +108,7 @@ body {
 .header {
   position: relative;
   height: 100vh;
-  background-image: url('../img/header.jpg');
+  background-image: url('../img/header.webp');
   background-position: 60% 0%;
   background-size: cover;
   color: $light;
@@ -157,13 +157,13 @@ body {
     }
 
     &-img-one {
-      background-image: url('../img/bg-carousel/bg-carousel-1.jpg');
+      background-image: url('../img/bg-carousel/bg-carousel-1.webp');
     }
     &-img-two {
-      background-image: url('../img/bg-carousel/bg-carousel-2.jpg');
+      background-image: url('../img/bg-carousel/bg-carousel-2.webp');
     }
     &-img-three {
-      background-image: url('../img/bg-carousel/bg-carousel-3.jpg');
+      background-image: url('../img/bg-carousel/bg-carousel-3.webp');
     }
   }
 }
@@ -427,7 +427,7 @@ body {
   }
 
   .header {
-    background-image: url('../img/header-hq.jpg');
+    background-image: url('../img/header-hq.webp');
   }
 
   .bg-carousel {
@@ -437,13 +437,13 @@ body {
       }
 
       &-img-one {
-        background-image: url('../img/bg-carousel/bg-carousel-1-hq.jpg');
+        background-image: url('../img/bg-carousel/bg-carousel-1-hq.webp');
       }
       &-img-two {
-        background-image: url('../img/bg-carousel/bg-carousel-2-hq.jpg');
+        background-image: url('../img/bg-carousel/bg-carousel-2-hq.webp');
       }
       &-img-three {
-        background-image: url('../img/bg-carousel/bg-carousel-3-hq.jpg');
+        background-image: url('../img/bg-carousel/bg-carousel-3-hq.webp');
       }
     }
   }
