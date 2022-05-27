@@ -12,13 +12,14 @@ const prepareDOMElements = () => {
 };
 
 const prepareDOMEvents = () => {
-  window.addEventListener('scroll', addShadow);
+  addEventListener('scroll', addShadow);
+  addShadow();
   navBtn.addEventListener('click', handleNav);
   document.addEventListener('click', closeNav);
 };
 
 const addShadow = () =>
-  window.scrollY >= 25
+  scrollY >= 25
     ? nav.classList.add('shadow-bg')
     : nav.classList.remove('shadow-bg');
 

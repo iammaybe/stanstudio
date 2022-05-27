@@ -351,13 +351,13 @@ body {
   .bg-carousel .carousel-item {
     height: 55rem;
   }
-  .bg-carousel-img-one {
+  .bg-carousel .carousel-img-one {
     background-image: url("../img/bg-carousel/bg-carousel-1-hq.jpg");
   }
-  .bg-carousel-img-two {
+  .bg-carousel .carousel-img-two {
     background-image: url("../img/bg-carousel/bg-carousel-2-hq.jpg");
   }
-  .bg-carousel-img-three {
+  .bg-carousel .carousel-img-three {
     background-image: url("../img/bg-carousel/bg-carousel-3-hq.jpg");
   }
 }/*# sourceMappingURL=main.css.map */

@@ -435,16 +435,16 @@ body {
       &-item {
         height: 55rem;
       }
-    }
 
-    &-img-one {
-      background-image: url('../img/bg-carousel/bg-carousel-1-hq.jpg');
-    }
-    &-img-two {
-      background-image: url('../img/bg-carousel/bg-carousel-2-hq.jpg');
-    }
-    &-img-three {
-      background-image: url('../img/bg-carousel/bg-carousel-3-hq.jpg');
+      &-img-one {
+        background-image: url('../img/bg-carousel/bg-carousel-1-hq.jpg');
+      }
+      &-img-two {
+        background-image: url('../img/bg-carousel/bg-carousel-2-hq.jpg');
+      }
+      &-img-three {
+        background-image: url('../img/bg-carousel/bg-carousel-3-hq.jpg');
+      }
     }
   }
 }
