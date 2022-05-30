@@ -88,16 +88,23 @@ body {
 
 .navbar {
   font-size: 2rem;
-  color: $light;
   transition: background-color 0.6s;
+
+  &-brand {
+    font-size: 2rem;
+    color: $light;
+    transition: color 0.3s;
+  }
+
+  &-brand:hover,
+  .nav-link:hover {
+    color: $light-gray;
+  }
 
   .nav-link {
     margin-left: auto;
-    color: rgb(240, 240, 240, 0.5);
-
-    &:hover {
-      color: $gray;
-    }
+    padding: 1rem 0;
+    color: $dark-gray;
   }
 
   .nav-link.active {
@@ -284,7 +291,7 @@ body {
 
 .footer {
   padding: 4rem 2rem;
-  background-color: $gray;
+  background-color: $light-gray;
   color: $dark;
 }
 
@@ -366,9 +373,14 @@ body {
 
 @media (min-width: 992px) {
   .navbar {
-    padding: 0.2rem 0;
+    font-size: 1.6rem;
+
     .container {
       padding: 0 1.6rem;
+    }
+
+    &-brand {
+      font-size: 1.6rem;
     }
   }
 
@@ -422,7 +434,7 @@ body {
 @media (min-width: 1400px) {
   .section {
     &-padding {
-      padding: 10rem 0;
+      padding: 12rem 0;
     }
   }
 
