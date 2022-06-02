@@ -173,6 +173,15 @@ body {
   }
 }
 
+.bg-mobile-img {
+  height: 35rem;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('../img/bg-carousel/bg-carousel-2.webp');
+}
+
 /* --- */
 
 .prices-cards {

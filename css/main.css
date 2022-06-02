@@ -149,6 +149,15 @@ body {
   background-image: url("../img/bg-carousel/bg-carousel-3.webp");
 }
 
+.bg-mobile-img {
+  height: 35rem;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../img/bg-carousel/bg-carousel-2.webp");
+}
+
 /* --- */
 .prices-cards .card-col {
   margin-bottom: 2rem;
